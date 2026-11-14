@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvision_state_adapter.a CMakeFiles/vision_state_adapter.dir/src/vision_state_adapter.cpp.o
+/usr/bin/ranlib libvision_state_adapter.a

@@ -1,0 +1,52 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from jikl_fc01_system/msg/VelocityCommand.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module jikl_fc01_system {
+  module msg {
+    @verbatim (language="comment", text=
+      "上位机（视觉/制导程序）发给飞控的速度指令。" "\n"
+      "用于让飞机按期望速度飞行并撞向目标。")
+    struct VelocityCommand {
+      @default (value=1)
+      uint16 schema_version;
+
+      uint64 sequence;
+
+      @verbatim (language="comment", text=
+        "指令计算时刻，使用双方约定好的 ROS/系统时钟。")
+      builtin_interfaces::msg::Time stamp;
+
+      uint32 reset_counter;
+
+      string source_id;
+
+      @verbatim (language="comment", text=
+        "vx/vy/vz 所在坐标系。默认 \"body_frd\"（机体系：x 前、y 右、z 下）。")
+      string frame_id;
+
+      @verbatim (language="comment", text=
+        "false 表示本帧无效，接收端应保持上一状态或忽略。")
+      boolean valid;
+
+      @verbatim (language="comment", text=
+        "期望速度，单位 m/s。默认机体系 FRD：" "\n"
+        "  vx > 0 向前，vx < 0 向后" "\n"
+        "  vy > 0 向右，vy < 0 向左" "\n"
+        "  vz > 0 向下，vz < 0 向上")
+      double vx;
+
+      double vy;
+
+      double vz;
+
+      @verbatim (language="comment", text=
+        "期望偏航角速度，单位 rad/s，坐标系与 vx/vy/vz 相同（默认 body_frd：" "\n"
+        "绕机体 z 轴、向下为正，即俯视顺时针）。作为偏航速率前馈使用；" "\n"
+        "0 表示不提供速率前馈，接收端仍按航向角目标跟踪。")
+      double wz;
+    };
+  };
+};

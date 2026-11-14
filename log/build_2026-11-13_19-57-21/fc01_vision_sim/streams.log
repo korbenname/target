@@ -1,0 +1,17 @@
+[0.540s] Invoking command in '/home/han/target/build/fc01_vision_sim': PYTHONPATH=/home/han/target/build/fc01_vision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/han/target/build/fc01_vision_sim/build --no-deps symlink_data
+[0.698s] running develop
+[0.784s] running egg_info
+[0.784s] writing fc01_vision_sim.egg-info/PKG-INFO
+[0.784s] writing dependency_links to fc01_vision_sim.egg-info/dependency_links.txt
+[0.784s] writing entry points to fc01_vision_sim.egg-info/entry_points.txt
+[0.784s] writing requirements to fc01_vision_sim.egg-info/requires.txt
+[0.784s] writing top-level names to fc01_vision_sim.egg-info/top_level.txt
+[0.785s] reading manifest file 'fc01_vision_sim.egg-info/SOURCES.txt'
+[0.786s] writing manifest file 'fc01_vision_sim.egg-info/SOURCES.txt'
+[0.787s] running build_ext
+[0.787s] Creating /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01-vision-sim.egg-link (link to .)
+[0.787s] Installing vision_sim script to /home/han/target/install/fc01_vision_sim/lib/fc01_vision_sim
+[0.787s] 
+[0.787s] Installed /home/han/target/build/fc01_vision_sim
+[0.787s] running symlink_data
+[0.804s] Invoked command in '/home/han/target/build/fc01_vision_sim' returned '0': PYTHONPATH=/home/han/target/build/fc01_vision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/han/target/build/fc01_vision_sim/build --no-deps symlink_data

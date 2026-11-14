@@ -1,0 +1,5 @@
+failed to create symbolic link '/home/han/target/build/jikl_fc01_system/ament_cmake_python/jikl_fc01_system/jikl_fc01_system' because existing path cannot be removed: Is a directory
+gmake[2]: *** [CMakeFiles/ament_cmake_python_symlink_jikl_fc01_system.dir/build.make:70：CMakeFiles/ament_cmake_python_symlink_jikl_fc01_system] 错误 1
+gmake[1]: *** [CMakeFiles/Makefile2:440：CMakeFiles/ament_cmake_python_symlink_jikl_fc01_system.dir/all] 错误 2
+gmake[1]: *** 正在等待未完成的任务....
+gmake: *** [Makefile:146：all] 错误 2

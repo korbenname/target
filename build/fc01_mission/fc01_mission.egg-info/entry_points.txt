@@ -1,0 +1,3 @@
+[console_scripts]
+mission = fc01_mission.mission_node:main
+

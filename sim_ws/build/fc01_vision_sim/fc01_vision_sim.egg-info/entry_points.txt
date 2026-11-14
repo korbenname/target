@@ -1,0 +1,3 @@
+[console_scripts]
+vision_sim = fc01_vision_sim.sim_node:main
+

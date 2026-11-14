@@ -1,0 +1,73 @@
+fc01_vision_image:
+  ros__parameters:
+    frame_width: 640
+    frame_height: 480
+    frame_id: body_frd
+
+    # 本节点消费 ROS 图像话题（仿真相机，或飞控转发的相机流），不直接打开
+    # /dev/videoN，所以这里没有 device_index。要接本机 USB 相机时运行
+    #   ros2 launch fc01_vision vision.launch.py
+    # （fc01_vision_node，直接取 V4L2），相机选项在
+    # fc01_vision/config/vision.yaml：本机实测 device_index: 2 是外接摄像头
+    # /dev/video2，device_index: 0 的内置相机当前输出黑图。
+    image_topic: /sim/camera/image_raw
+    camera_info_topic: /sim/camera/camera_info
+    # 主输出：jikl_fc01_system/VisionState。
+    state_topic: /fc01/vision/state
+    source_id: fc01_vision_image
+    body_frame_id: body_frd
+    invalid_position_std_m: 1000.0
+    invalid_velocity_std_mps: 1000.0
+    # 兼容输出：仿真默认用这条相对位置话题闭环。
+    relative_topic: /fc01/vision/target_relative
+    valid_topic: /fc01/vision/target_valid
+    debug_image_topic: /fc01/vision/debug_image
+
+    # 仿真会发布精确的 CameraInfo，内参直接用它。
+    use_camera_info: true
+    publish_debug_image: false
+
+    # 目标改成地图自带的绿色指示灯（CAD 绿色材质）。RGB 亮度偏低，饱和度
+    # 也不高，所以明度下限放到 60、饱和度下限 60。色相上限仍收在 80：
+    # RMUC 场地的青色装饰条约 90，放开会误识别。
+    hsv_ranges:
+      - "35,80,60,255,60,255"
+    blur_kernel: 3
+    # 灯只有约 5.7 cm，1.9 m 外只有 5-6 px；5x5 的开运算会把它整个吃掉，
+    # 3x3 刚好留得住。
+    morph_kernel: 3
+    min_area_ratio: 0.0001
+    max_area_ratio: 0.5
+    min_width_px: 3
+    min_height_px: 3
+    target_shape: circle
+    circle_min_circularity: 0.6
+    # 被画面边缘裁掉一部分的色块，质心会偏、视直径会偏小；
+    # 直接丢弃，避免发布严重错误的距离。
+    reject_border_touch: true
+    border_margin_px: 2
+
+    # 目标物理直径（绿灯 5.7 x 5.5 cm，取均值 5.6 cm），用于按视直径
+    # 单目测距。
+    target_diameter_m: 0.056
+    # 仿真场景里的相机安装俯仰（正值 = 上仰），必须和 sim.yaml 的
+    # camera_pitch_deg 一致。上仰 10° 保证高速前飞、机头大幅前倾时
+    # 目标仍在画面内。
+    camera_pitch_deg: 10.0
+    min_range_m: 0.1
+    max_range_m: 20.0
+    use_pnp: true
+    max_reprojection_error_px: 8.0
+
+    position_alpha: 0.6
+    velocity_beta: 0.2
+    stale_timeout_s: 0.5
+    max_dt_s: 0.2
+
+    # 仅作兜底，收到 CameraInfo 后以 CameraInfo 为准。这组值对应仿真相机：
+    # 320x240，垂直视场 70°。
+    camera_fx: 171.38
+    camera_fy: 171.38
+    camera_cx: 160.0
+    camera_cy: 120.0
+    camera_hfov_deg: 86.1

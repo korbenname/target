@@ -1,0 +1,8 @@
+msg/NavigationCommand.idl
+msg/NavigationCommand.msg
+msg/VelocityCommand.idl
+msg/VelocityCommand.msg
+msg/VisionHealth.idl
+msg/VisionHealth.msg
+msg/VisionState.idl
+msg/VisionState.msg

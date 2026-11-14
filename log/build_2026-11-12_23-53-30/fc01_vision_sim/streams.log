@@ -1,0 +1,44 @@
+[0.346s] Invoking command in '/home/han/target/build/fc01_vision_sim': PYTHONPATH=/home/han/target/build/fc01_vision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/han/target/build/fc01_vision_sim/build
+[0.493s] running develop
+[0.575s] Removing /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01-vision-sim.egg-link (link to .)
+[0.590s] Invoked command in '/home/han/target/build/fc01_vision_sim' returned '0': PYTHONPATH=/home/han/target/build/fc01_vision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --uninstall --editable --build-directory /home/han/target/build/fc01_vision_sim/build
+[0.591s] Invoking command in '/home/han/target/src/fc01_vision_sim': PYTHONPATH=/home/han/target/build/fc01_vision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fc01_vision_sim build --build-base /home/han/target/build/fc01_vision_sim/build install --record /home/han/target/build/fc01_vision_sim/install.log --install-scripts $base/lib/fc01_vision_sim --single-version-externally-managed install_data --force
+[0.732s] running egg_info
+[0.732s] writing ../../build/fc01_vision_sim/fc01_vision_sim.egg-info/PKG-INFO
+[0.732s] writing dependency_links to ../../build/fc01_vision_sim/fc01_vision_sim.egg-info/dependency_links.txt
+[0.732s] writing entry points to ../../build/fc01_vision_sim/fc01_vision_sim.egg-info/entry_points.txt
+[0.732s] writing requirements to ../../build/fc01_vision_sim/fc01_vision_sim.egg-info/requires.txt
+[0.733s] writing top-level names to ../../build/fc01_vision_sim/fc01_vision_sim.egg-info/top_level.txt
+[0.733s] reading manifest file '../../build/fc01_vision_sim/fc01_vision_sim.egg-info/SOURCES.txt'
+[0.734s] writing manifest file '../../build/fc01_vision_sim/fc01_vision_sim.egg-info/SOURCES.txt'
+[0.734s] running build
+[0.734s] running build_py
+[0.734s] creating /home/han/target/build/fc01_vision_sim/build
+[0.734s] creating /home/han/target/build/fc01_vision_sim/build/lib
+[0.734s] creating /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim
+[0.734s] copying fc01_vision_sim/sim_node.py -> /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim
+[0.734s] copying fc01_vision_sim/scene.py -> /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim
+[0.734s] copying fc01_vision_sim/__init__.py -> /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim
+[0.734s] running install
+[0.735s] running install_lib
+[0.735s] creating /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim
+[0.735s] copying /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim/sim_node.py -> /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim
+[0.735s] copying /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim/scene.py -> /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim
+[0.735s] copying /home/han/target/build/fc01_vision_sim/build/lib/fc01_vision_sim/__init__.py -> /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim
+[0.736s] byte-compiling /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim/sim_node.py to sim_node.cpython-310.pyc
+[0.742s] byte-compiling /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim/scene.py to scene.cpython-310.pyc
+[0.743s] byte-compiling /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim/__init__.py to __init__.cpython-310.pyc
+[0.743s] running install_data
+[0.743s] copying resource/fc01_vision_sim -> /home/han/target/install/fc01_vision_sim/share/ament_index/resource_index/packages
+[0.743s] copying package.xml -> /home/han/target/install/fc01_vision_sim/share/fc01_vision_sim
+[0.744s] copying launch/vision_sim.launch.py -> /home/han/target/install/fc01_vision_sim/share/fc01_vision_sim/launch
+[0.744s] copying config/vision_image.yaml -> /home/han/target/install/fc01_vision_sim/share/fc01_vision_sim/config
+[0.744s] copying config/sim.yaml -> /home/han/target/install/fc01_vision_sim/share/fc01_vision_sim/config
+[0.744s] copying assets/impact_drone_hull.obj -> /home/han/target/install/fc01_vision_sim/share/fc01_vision_sim/assets
+[0.744s] copying assets/impact_drone_lod.obj -> /home/han/target/install/fc01_vision_sim/share/fc01_vision_sim/assets
+[0.747s] running install_egg_info
+[0.748s] Copying ../../build/fc01_vision_sim/fc01_vision_sim.egg-info to /home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages/fc01_vision_sim-0.1.0-py3.10.egg-info
+[0.749s] running install_scripts
+[0.764s] Installing vision_sim script to /home/han/target/install/fc01_vision_sim/lib/fc01_vision_sim
+[0.765s] writing list of installed files to '/home/han/target/build/fc01_vision_sim/install.log'
+[0.780s] Invoked command in '/home/han/target/src/fc01_vision_sim' returned '0': PYTHONPATH=/home/han/target/build/fc01_vision_sim/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/han/target/install/fc01_vision_sim/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/fc01_vision_sim build --build-base /home/han/target/build/fc01_vision_sim/build install --record /home/han/target/build/fc01_vision_sim/install.log --install-scripts $base/lib/fc01_vision_sim --single-version-externally-managed install_data --force

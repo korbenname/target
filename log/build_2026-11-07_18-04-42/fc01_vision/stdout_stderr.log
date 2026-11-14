@@ -1,0 +1,42 @@
+Consolidate compiler generated dependencies of target vision_core
+[ 10%] Building CXX object CMakeFiles/vision_core.dir/src/camera_source.cpp.o
+[ 20%] Linking CXX static library libvision_core.a
+[ 60%] Built target vision_core
+[ 70%] Building CXX object CMakeFiles/vision_core_selftest.dir/tools/vision_selftest.cpp.o
+[ 80%] Building CXX object CMakeFiles/vision_demo.dir/tools/vision_demo.cpp.o
+[ 90%] Linking CXX executable vision_core_selftest
+[ 90%] Built target vision_core_selftest
+[100%] Linking CXX executable vision_demo
+[100%] Built target vision_demo
+-- Install configuration: "Release"
+-- Installing: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_demo
+-- Installing: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_core_selftest
+-- Installing: /home/han/target/install/fc01_vision/include
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/color_detector.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/camera_source.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/vision_pipeline.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/target_estimator.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/vision_state_adapter.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/debug_draw.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/types.hpp
+-- Installing: /home/han/target/install/fc01_vision/include/fc01_vision/vision_node.hpp
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/config
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/config/vision.yaml
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/launch
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/launch/vision.launch.py
+-- Installing: /home/han/target/install/fc01_vision/share/ament_index/resource_index/package_run_dependencies/fc01_vision
+-- Installing: /home/han/target/install/fc01_vision/share/ament_index/resource_index/parent_prefix_path/fc01_vision
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/environment/ament_prefix_path.sh
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/environment/ament_prefix_path.dsv
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/environment/path.sh
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/environment/path.dsv
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.bash
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.sh
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.zsh
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.dsv
+-- Up-to-date: /home/han/target/install/fc01_vision/share/fc01_vision/package.dsv
+-- Installing: /home/han/target/install/fc01_vision/share/ament_index/resource_index/packages/fc01_vision
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/cmake/fc01_visionConfig.cmake
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/cmake/fc01_visionConfig-version.cmake
+-- Installing: /home/han/target/install/fc01_vision/share/fc01_vision/package.xml

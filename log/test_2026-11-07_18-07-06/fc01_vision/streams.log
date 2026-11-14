@@ -1,0 +1,50 @@
+[0.026s] Invoking command in '/home/han/target/build/fc01_vision': AMENT_PREFIX_PATH=/home/han/target/install/fc01_vision:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/fc01_vision /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+[0.035s] UpdateCTestConfiguration  from :/home/han/target/build/fc01_vision/CTestConfiguration.ini
+[0.035s] Parse Config file:/home/han/target/build/fc01_vision/CTestConfiguration.ini
+[0.035s]    Site: han-Redmi-Book-16-2024-Gen13-CPU-FHD
+[0.035s]    Build name: (empty)
+[0.035s]  Add coverage exclude regular expressions.
+[0.035s] Create new tag: 20261107-1007 - Experimental
+[0.035s] UpdateCTestConfiguration  from :/home/han/target/build/fc01_vision/CTestConfiguration.ini
+[0.035s] Parse Config file:/home/han/target/build/fc01_vision/CTestConfiguration.ini
+[0.035s] Test project /home/han/target/build/fc01_vision
+[0.035s] Constructing a list of tests
+[0.035s] Done constructing a list of tests
+[0.035s] Updating test list for fixtures
+[0.035s] Added 0 tests to meet fixture requirements
+[0.035s] Checking test dependency graph...
+[0.035s] Checking test dependency graph end
+[0.035s] test 1
+[0.035s]     Start 1: vision_core_selftest
+[0.035s] 
+[0.035s] 1: Test command: /home/han/target/build/fc01_vision/vision_core_selftest
+[0.036s] 1: Test timeout computed to be: 10000000
+[0.057s] 1: [ ok ] red rectangle is detected
+[0.057s] 1: [ ok ] rectangle centre x (actual=400.0000 expected=400.0000 tol=3.0000)
+[0.057s] 1: [ ok ] rectangle centre y (actual=300.0000 expected=300.0000 tol=3.0000)
+[0.057s] 1: [ ok ] rectangle width (actual=83.0000 expected=80.0000 tol=6.0000)
+[0.057s] 1: [ ok ] rectangle height (actual=63.0000 expected=60.0000 tol=6.0000)
+[0.057s] 1: [ ok ] PnP estimate is valid
+[0.058s] 1: [ ok ] PnP range (actual=1.4746 expected=1.5000 tol=0.0800)
+[0.058s] 1: [ ok ] PnP FRD x (forward) (actual=1.4545 expected=1.5000 tol=0.0800)
+[0.058s] 1: [ ok ] PnP FRD y (right) (actual=0.1942 expected=0.2000 tol=0.0500)
+[0.058s] 1: [ ok ] PnP FRD z (down) (actual=0.1454 expected=0.1500 tol=0.0500)
+[0.058s] 1: [ ok ] blue circle is detected
+[0.058s] 1: [ ok ] circle range estimate is valid
+[0.058s] 1: [ ok ] circle range (actual=0.9801 expected=1.0000 tol=0.1000)
+[0.058s] 1: [ ok ] circle FRD y (actual=0.0000 expected=0.0000 tol=0.0500)
+[0.058s] 1: [ ok ] circle FRD z (actual=0.0000 expected=0.0000 tol=0.0500)
+[0.058s] 1: [ ok ] bearing-only is not a valid position
+[0.058s] 1: [ ok ] bearing points to the right
+[0.058s] 1: [ ok ] first detection produces a valid position
+[0.058s] 1: [ ok ] short dropout stays valid (coasting)
+[0.058s] 1: [ ok ] long dropout becomes invalid
+[0.058s] 1: [ ok ] long dropout is not detected
+[0.058s] 1: 
+[0.058s] 1: All vision_core self tests passed.
+[0.058s] 1/1 Test #1: vision_core_selftest .............   Passed    0.02 sec
+[0.058s] 
+[0.058s] 100% tests passed, 0 tests failed out of 1
+[0.059s] 
+[0.059s] Total Test time (real) =   0.02 sec
+[0.061s] Invoked command in '/home/han/target/build/fc01_vision' returned '0': AMENT_PREFIX_PATH=/home/han/target/install/fc01_vision:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/fc01_vision /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

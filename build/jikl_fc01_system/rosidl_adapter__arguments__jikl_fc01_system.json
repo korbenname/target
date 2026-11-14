@@ -1,0 +1,9 @@
+{
+  "package_name": "jikl_fc01_system",
+  "non_idl_tuples": [
+    "/home/han/target/src/jikl_fc01_system:msg/VisionState.msg",
+    "/home/han/target/src/jikl_fc01_system:msg/VisionHealth.msg",
+    "/home/han/target/src/jikl_fc01_system:msg/NavigationCommand.msg",
+    "/home/han/target/src/jikl_fc01_system:msg/VelocityCommand.msg"
+  ]
+}

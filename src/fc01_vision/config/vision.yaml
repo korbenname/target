@@ -1,0 +1,97 @@
+/**:
+  ros__parameters:
+    # ---- 相机（V4L2 / USB 摄像头）----------------------------------------
+    # 本机可用的 UVC 相机（2026-11-13 实测，用 OpenCV/V4L2 逐一取帧确认）：
+    #   device_index: 0 -> /dev/video0  笔记本内置 HP True Vision FHD Camera
+    #                      （能打开，但所有帧全黑：检查隐私挡板或 BIOS 是否禁用）
+    #   device_index: 2 -> /dev/video2  外接 USB "PC Camera"（Sunplus）
+    #                      （可用：640x480、MJPEG、30 fps）
+    # 每台相机会占两个 /dev/videoN，只有 index0 对应的节点（video0/video2）
+    # 能取图；编号可能随插拔/启动顺序变化，可用 `ls -l /dev/v4l/by-id/` 核对：
+    #   usb-Foxlink_HP_True_Vision_FHD_Camera-video-index0 -> video0
+    #   usb-DHZJ-260605-XH_PC_Camera_01.00.00-video-index0 -> video2
+    # 节点内部把 device_index 直接传给 cv::VideoCapture.open，所以这里只能填整数。
+    device_index: 2
+    # 采集格式：高帧率必须用 MJPEG。本机外接相机实测 640x480 支持
+    # 30/60/120 fps（120 fps 连续帧内容都不同，不是重复帧）；800x600 及以上
+    # 会回落到 640x480。flip_horizontal 用于镜头倒装的机架。
+    frame_width: 640
+    frame_height: 480
+    frame_fps: 120
+    use_mjpg: true
+    flip_horizontal: false
+    # V4L2 缓冲区数量。这块 UVC 相机在 buffer_size=1 时会掉一半帧率
+    # （120 -> 60 fps），4 才能跑满 120；只保留最新帧的取流循环不受影响。
+    buffer_size: 4
+
+    # ---- 相机内参 ---------------------------------------------------------
+    # 本机相机：2.8 mm 镜头、30 万像素（640x480）。按常见的 1/4 英寸、
+    # 6.0 µm 像元模组（OV7725 一类）计算：
+    #   fx = fy = 2.8 mm / 6.0 µm ≈ 466.7 px
+    #   水平视场 = 2*atan(320/466.7) ≈ 68.9°，垂直约 54.4°。
+    # 像元尺寸不同时 fx 会按比例变化；可以用 README 里的方法快速核对，
+    # 正式飞行前建议做一次标定。fx 填 0 时会退回到 camera_hfov_deg 估算。
+    camera_fx: 466.7
+    camera_fy: 466.7
+    camera_cx: 320.0
+    camera_cy: 240.0
+    camera_hfov_deg: 68.9
+
+    # ---- 颜色检测 ---------------------------------------------------------
+    # 每条格式："h_min,h_max,s_min,s_max,v_min,v_max"。
+    # 红色在色相 0 处环绕，所以需要两段。
+    hsv_ranges:
+      - "0,10,80,255,50,255"
+      - "170,180,80,255,50,255"
+    blur_kernel: 5
+    morph_kernel: 5
+    min_area_ratio: 0.002
+    max_area_ratio: 0.5
+    min_width_px: 6
+    min_height_px: 6
+    target_shape: "auto"          # auto | rect | circle
+    circle_min_circularity: 0.85
+    # 贴到画面边缘的色块（被裁掉一部分）质心偏移、尺寸偏小，按直径测距会
+    # 严重偏大；直接丢弃，不要发布这种距离。
+    reject_border_touch: true
+    border_margin_px: 2
+
+    # ---- 目标物理尺寸（米）------------------------------------------------
+    # 矩形：宽 + 高，启用平面 PnP。
+    # 圆：直径，用于按视直径测距。
+    # 尺寸填 0 时只输出方位角（position_valid=false）。
+    target_width_m: 0.20
+    target_height_m: 0.15
+    target_diameter_m: 0.20
+    min_range_m: 0.1
+    max_range_m: 20.0
+    max_reprojection_error_px: 8.0
+    use_pnp: true
+
+    # ---- 滤波 -------------------------------------------------------------
+    position_alpha: 0.5
+    velocity_beta: 0.1
+    stale_timeout_s: 0.5
+    max_dt_s: 0.2
+
+    # ---- 输出 -------------------------------------------------------------
+    # 与 frame_fps 一致：每帧都检测、每帧都发布。检测线程处理不过来的帧会被
+    # 直接跳过（CameraSource 只保留最新帧），不会积压。
+    publish_rate_hz: 120.0
+    detect_every_n: 1
+    state_topic: "/fc01/vision/state"
+    frame_id: "body_frd"
+    # VisionState 元数据。
+    source_id: "fc01_vision"
+    body_frame_id: "body_frd"
+    # ---- 可视化 -----------------------------------------------------------
+    # 总开关：true = 打开 OpenCV 实时标注/滑条窗口，并发布 debug 图像。
+    # 下面两个细粒度参数仍可用，和总开关取“或”。无桌面的 ARM 板保持 false。
+    visualization: false
+    show_tuning_window: false
+    publish_debug_image: false
+    debug_image_topic: "/fc01/vision/debug_image"
+
+    # ---- 估计无效时协方差用的兜底值 ---------------------------------------
+    invalid_position_std_m: 1000.0
+    invalid_velocity_std_mps: 1000.0

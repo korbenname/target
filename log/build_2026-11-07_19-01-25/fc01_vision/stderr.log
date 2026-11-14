@@ -1,0 +1,6 @@
+CMake Warning at CMakeLists.txt:102 (message):
+  jikl_fc01_system not found: fc01_vision_node is skipped.  vision_core,
+  vision_demo, vision_core_selftest and vision_image_node are still built.
+  Provide VisionState.msg and rebuild to get fc01_vision_node.
+
+

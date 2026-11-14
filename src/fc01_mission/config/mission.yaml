@@ -1,0 +1,143 @@
+fc01_mission:
+  ros__parameters:
+    # 制导/任务节点：订阅视觉相对位置和平台状态，输出
+    # jikl_fc01_system/VelocityCommand（机体系 FRD）到 /visioncontrol。
+    # 与 fc01_vision_sim 完全解耦，换到真机只需换掉平台状态话题。
+
+    # 控制回路频率（状态机）和指令发布频率（/visioncontrol）。
+    control_hz: 100.0
+    vision_control_hz: 50.0
+    publish_vision_control: true
+    vision_control_topic: /visioncontrol
+    vision_control_source_id: fc01_mission
+    # 视觉锁定前的航点指令，单独话题发给飞控（NavigationCommand，CRUISE）。
+    # 一出现有效视觉（或离开 takeoff/seek）就发 valid=false，飞控切回
+    # /visioncontrol；仿真不消费这个话题。
+    publish_navigation_command: true
+    navigation_command_topic: /navigation_command
+    navigation_command_hz: 10.0
+    # 航向不单独发绝对角度，而是在 VelocityCommand.wz 里发机体偏航角速度。
+    # 本节点用平台姿态自己闭环航向误差：wz = 增益×航向误差 + 设定值导数前馈。
+    # 值越大转机头越快；0 表示不主动转机头（保持当前航向）。
+    yaw_rate_gain: 3.0
+    # 机体系 FRD 单轴速度硬上限（m/s）：发布 /visioncontrol 前逐轴裁剪，
+    # 任何阶段都生效，0 = 不限制。单轴饱和会改变速度方向，正常调参优先用
+    # 各阶段的速度参数，这里只做安全兜底。
+    max_vx_mps: 0.0
+    max_vy_mps: 0.0
+    max_vz_mps: 0.0
+
+    # 输入话题。
+    relative_topic: /fc01/vision/target_relative
+    vision_state_topic: /fc01/vision/state
+    # true = 用 VisionState（优先于 target_relative）。
+    use_vision_state: false
+    platform_pose_topic: /sim/platform_pose
+    platform_velocity_topic: /sim/platform_velocity
+    platform_angular_velocity_topic: /sim/platform_angular_velocity
+    contact_force_topic: /sim/target_contact_force
+    impact_topic: /sim/impact
+    reset_event_topic: /sim/reset_event
+    # 任务状态（std_msgs/String），方便观察状态机走到哪一步。
+    state_topic: /mission/state
+    state_publish_hz: 10.0
+
+    # 相机在机体 FLU 坐标系里的安装位置（x 前、y 左、z 上）。视觉发布的是
+    # 相对相机光心的位置，换算世界坐标要加这个偏移。必须和仿真场景一致。
+    camera_pos_x: 0.08
+    camera_pos_y: 0.0
+    camera_pos_z: 0.015
+
+    # 地图上绿灯的已知坐标。这是先验（盲飞巡航和静态冲撞都用它），
+    # 不是反馈；闭环只使用视觉测量。必须和 sim.yaml 的 target_x/y/z 一致。
+    target_x: 0.315
+    target_y: -4.958
+    target_base_z: 1.373
+    # 撞灯时机头应保持的航向（°）。灯面朝 -x（西），机头朝 +x 时航向 0°。
+    target_face_yaw_deg: 0.0
+    # static：目标固定在地图坐标，冲撞段和顶住瞄准点使用精确地图坐标；
+    # 其他取值时瞄准点改用视觉估计。
+    target_motion: static
+
+    # ---- 起飞 / 巡航 ----
+    # 先在 H 牌上方竖直爬升到 2.78 m（牌面 1.731 m，机体从 1.775 m 起），
+    # 悬停 0.8 s 再向前飞；巡航段一边前飞一边降到 push_altitude_m。
+    takeoff_altitude_m: 2.78
+    takeoff_climb_mps: 0.7
+    takeoff_hover_s: 0.8
+    # 巡航速度 smoothstep 渐入（s），两端加速度为零。
+    seek_ramp_s: 1.2
+    # 巡航段允许的最大下降速度（m/s）。从 2.78 m 降到 1.35 m 约 1.4 m，
+    # 1.4 m/s 在视觉锁定前就降到位，冲撞是平飞贴上去的。
+    cruise_descent_mps: 1.4
+
+    # ---- 视觉闭环 ----
+    # engage_mode: track  -> 保持在目标前方 standoff_m 处跟踪
+    #              impact -> 一次撞击，接触后飞控收油
+    #              push   -> 持续冲击：接触后继续给推力顶住目标（默认）
+    control_enabled: true
+    engage_mode: push
+    standoff_m: 3.0
+    # 位置环增益 [1/s]。稳定条件 controller_gain * velocity_tau < 1。
+    controller_gain: 2.0
+    max_speed: 1.5
+    # 还没看到目标时的盲飞巡航速度（按地图坐标飞过去）。
+    search_speed: 4.0
+    track_max_speed: 2.0
+    # 视觉数据/平台状态的超时。视觉超过 command_timeout_s 视为丢失；
+    # 平台状态超过 pose_timeout_s 则本节点停止发指令（飞控超时后悬停）。
+    command_timeout_s: 0.5
+    pose_timeout_s: 0.5
+    # 接触力超过这么久没更新就当作未接触。
+    contact_timeout_s: 0.2
+
+    # ---- 视觉锁定后的冲撞段 ----
+    # 视觉一锁定灯（约 2.6 m 内），沿灯的地图精确坐标以恒定 strike_speed
+    # 直冲；距离 strike_engage_m（机头前脸贴到灯面）交给 push。冲撞段
+    # 不依赖视觉持续可见。strike_speed <= 0 关闭冲撞。
+    strike_speed: 2.0
+    strike_trigger_m: 2.6
+    strike_engage_m: 0.10
+    strike_timeout_s: 3.0
+    # 撞上后先反向阻尼 strike_settle_s 秒再开始顶，避免往接触里泵能量。
+    strike_settle_s: 0.25
+    strike_settle_brake_mps: 0.4
+
+    # ---- 持续冲击（push 模式）----
+    # 冲撞段关闭时，push_engage_m 内切换到 push。
+    push_engage_m: 1.2
+    # 被弹开到 push_release_m 以外才退回 seek 重新接近。
+    push_release_m: 1.8
+    # 顶住时的速度指令。稳态接触力 ≈ 质量 * push_speed / velocity_tau，
+    # 0.24 kg、0.3 m/s、0.12 s 时约 0.6 N。
+    push_speed: 0.3
+    # 接触力上限 [N]；超过后按比例缩小速度指令，防止把机身顶翻。
+    push_max_force_n: 20.0
+    # 顶住时保持的机体高度 1.35 m。灯心 1.373 m，但灯上方约 2 cm 就是
+    # 基地头部顶面（1.394 m）：按灯心顶会被挑上顶面（机体升到 1.44 m、
+    # 俯仰 18°，用棱角骑在头部边缘）。1.35 m 时机壳顶面 1.3865 m，整个
+    # 机身都在头部顶面以下；接触时高度环把机体托在 1.36–1.37 m。
+    # 0 表示用 target_base_z + push_altitude_offset_m。
+    push_altitude_m: 1.35
+    push_altitude_offset_m: 0.05
+
+    # ---- 顶住之后撤出 ----
+    # 从撞上灯开始计时，顶住 push_hold_s 秒后沿来时方向直线后退到离灯
+    # retreat_distance_m 处，切换成 hold 稳态悬停。<= 0 关闭撤出。
+    push_hold_s: 3.0
+    retreat_speed: 0.8
+    retreat_distance_m: 1.0
+    retreat_ramp_s: 0.5
+    # 世界坐标系下的高度下限；低于它不再给负的高度指令。
+    min_altitude_m: 0.20
+
+    # ---- impact 模式 ----
+    # 进入 terminal_trigger_m 后按 impact_speed 末制导冲撞；contact 后
+    # 由飞控收油（仿真侧在接触时切电机）。terminal_timeout_s 超时视为
+    # 脱靶，停止发指令。
+    impact_speed: 5.0
+    terminal_trigger_m: 2.2
+    terminal_timeout_s: 1.0
+
+    # >0：把这个频率的控制调试信息打到日志（0 = 关闭）。
+    control_debug_hz: 0.0

@@ -1,0 +1,72 @@
+[0.010s] Invoking command in '/home/han/target/build/fc01_vision': AMENT_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:/opt/ros/humble LD_LIBRARY_PATH=/home/han/target/install/jikl_fc01_system/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/han/target/build/fc01_vision -- -j12 -l12
+[0.033s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.132s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.138s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.157s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.159s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.163s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.169s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.177s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.203s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.205s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.302s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.370s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.394s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.402s] -- Found jikl_fc01_system: 0.1.0 (/home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake)
+[0.465s] -- Configuring done
+[0.500s] -- Generating done
+[0.509s] -- Build files have been written to: /home/han/target/build/fc01_vision
+[0.544s] Consolidate compiler generated dependencies of target vision_core
+[0.564s] [ 31%] Built target vision_core
+[0.584s] Consolidate compiler generated dependencies of target vision_ros_common
+[0.586s] Consolidate compiler generated dependencies of target vision_core_selftest
+[0.589s] Consolidate compiler generated dependencies of target vision_demo
+[0.599s] [ 36%] Building CXX object CMakeFiles/vision_state_adapter.dir/src/vision_state_adapter.cpp.o
+[0.606s] [ 47%] Built target vision_core_selftest
+[0.608s] [ 57%] Built target vision_demo
+[0.612s] [ 68%] Built target vision_ros_common
+[1.227s] [ 73%] Linking CXX static library libvision_state_adapter.a
+[1.270s] [ 73%] Built target vision_state_adapter
+[1.286s] Consolidate compiler generated dependencies of target vision_image_node
+[1.292s] [ 78%] Building CXX object CMakeFiles/fc01_vision_node.dir/src/main.cpp.o
+[1.293s] [ 84%] Building CXX object CMakeFiles/fc01_vision_node.dir/src/vision_node.cpp.o
+[1.305s] [ 89%] Building CXX object CMakeFiles/vision_image_node.dir/src/vision_image_node.cpp.o
+[5.976s] [ 94%] Linking CXX executable fc01_vision_node
+[6.408s] [ 94%] Built target fc01_vision_node
+[12.917s] [100%] Linking CXX executable vision_image_node
+[13.240s] [100%] Built target vision_image_node
+[13.253s] Invoked command in '/home/han/target/build/fc01_vision' returned '0': AMENT_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:/opt/ros/humble LD_LIBRARY_PATH=/home/han/target/install/jikl_fc01_system/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/han/target/build/fc01_vision -- -j12 -l12
+[13.255s] Invoking command in '/home/han/target/build/fc01_vision': AMENT_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:/opt/ros/humble LD_LIBRARY_PATH=/home/han/target/install/jikl_fc01_system/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/han/target/build/fc01_vision
+[13.266s] -- Install configuration: "Release"
+[13.267s] -- Execute custom install script
+[13.267s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_image_node
+[13.267s] -- Symlinking: /home/han/target/install/fc01_vision/lib/fc01_vision/fc01_vision_node
+[13.278s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_demo
+[13.278s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_core_selftest
+[13.278s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/camera_source.hpp
+[13.278s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/color_detector.hpp
+[13.278s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/debug_draw.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/param_utils.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/target_estimator.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/types.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/vision_node.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/vision_pipeline.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/vision_state_adapter.hpp
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/config/vision.yaml
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/launch/vision.launch.py
+[13.279s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/ament_index/resource_index/package_run_dependencies/fc01_vision
+[13.280s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/ament_index/resource_index/parent_prefix_path/fc01_vision
+[13.280s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/ament_prefix_path.sh
+[13.280s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/ament_prefix_path.dsv
+[13.281s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/path.sh
+[13.281s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/path.dsv
+[13.281s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.bash
+[13.281s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.sh
+[13.281s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.zsh
+[13.281s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.dsv
+[13.281s] -- Symlinking: /home/han/target/install/fc01_vision/share/fc01_vision/package.dsv
+[13.292s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/ament_index/resource_index/packages/fc01_vision
+[13.292s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/cmake/fc01_visionConfig.cmake
+[13.292s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/cmake/fc01_visionConfig-version.cmake
+[13.292s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/package.xml
+[13.295s] Invoked command in '/home/han/target/build/fc01_vision' returned '0': AMENT_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/jikl_fc01_system:/opt/ros/humble LD_LIBRARY_PATH=/home/han/target/install/jikl_fc01_system/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/han/target/build/fc01_vision

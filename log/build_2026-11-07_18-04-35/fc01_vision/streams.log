@@ -1,0 +1,57 @@
+[0.008s] Invoking command in '/home/han/target/build/fc01_vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/han/target/src/fc01_vision -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/han/target/install/fc01_vision
+[0.015s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.111s] -- Found rclcpp: 16.0.21 (/opt/ros/humble/share/rclcpp/cmake)
+[0.130s] -- Found rosidl_generator_c: 3.1.9 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.131s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.135s] -- Found rosidl_generator_cpp: 3.1.9 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.141s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.149s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.170s] -- Found rmw_implementation_cmake: 6.1.4 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.171s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.245s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.284s] -- Found sensor_msgs: 4.9.2 (/opt/ros/humble/share/sensor_msgs/cmake)
+[0.302s] -- Found cv_bridge: 3.2.1 (/opt/ros/humble/share/cv_bridge/cmake)
+[0.315s] CMake Warning at CMakeLists.txt:73 (message):
+[0.315s]   jikl_fc01_system not found: building vision_core, vision_demo and
+[0.315s]   vision_core_selftest only.  Install/provide VisionState.msg and rebuild to
+[0.315s]   get fc01_vision_node.
+[0.316s] 
+[0.316s] 
+[0.363s] -- Configuring done
+[0.371s] -- Generating done
+[0.373s] -- Build files have been written to: /home/han/target/build/fc01_vision
+[0.379s] Invoked command in '/home/han/target/build/fc01_vision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/han/target/src/fc01_vision -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=/home/han/target/install/fc01_vision
+[0.381s] Invoking command in '/home/han/target/build/fc01_vision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/fc01_vision -- -j12 -l12
+[0.436s] [ 10%] Building CXX object CMakeFiles/vision_core.dir/src/color_detector.cpp.o
+[0.436s] [ 20%] Building CXX object CMakeFiles/vision_core.dir/src/target_estimator.cpp.o
+[0.440s] [ 30%] Building CXX object CMakeFiles/vision_core.dir/src/camera_source.cpp.o
+[0.443s] [ 50%] Building CXX object CMakeFiles/vision_core.dir/src/debug_draw.cpp.o
+[0.444s] [ 50%] Building CXX object CMakeFiles/vision_core.dir/src/vision_pipeline.cpp.o
+[1.219s] In file included from /home/han/target/src/fc01_vision/src/camera_source.cpp:1:
+[1.219s] /home/han/target/src/fc01_vision/include/fc01_vision/camera_source.hpp:45:20: error: ‘cv::VideoCapture’ has not been declared
+[1.219s]    45 |   bool openCapture(cv::VideoCapture& cap);
+[1.219s]       |                    ^~
+[1.229s] /home/han/target/src/fc01_vision/src/camera_source.cpp:71:6: error: no declaration matches ‘bool fc01_vision::CameraSource::openCapture(cv::VideoCapture&)’
+[1.229s]    71 | bool CameraSource::openCapture(cv::VideoCapture& cap) {
+[1.230s]       |      ^~~~~~~~~~~~
+[1.230s] In file included from /home/han/target/src/fc01_vision/src/camera_source.cpp:1:
+[1.230s] /home/han/target/src/fc01_vision/include/fc01_vision/camera_source.hpp:45:8: note: candidate is: ‘bool fc01_vision::CameraSource::openCapture(int&)’
+[1.230s]    45 |   bool openCapture(cv::VideoCapture& cap);
+[1.230s]       |        ^~~~~~~~~~~
+[1.230s] /home/han/target/src/fc01_vision/include/fc01_vision/camera_source.hpp:18:7: note: ‘class fc01_vision::CameraSource’ defined here
+[1.230s]    18 | class CameraSource {
+[1.230s]       |       ^~~~~~~~~~~~
+[1.230s] /home/han/target/src/fc01_vision/src/camera_source.cpp: In member function ‘void fc01_vision::CameraSource::threadLoop()’:
+[1.230s] /home/han/target/src/fc01_vision/src/camera_source.cpp:122:28: error: cannot convert ‘cv::VideoCapture’ to ‘int&’
+[1.230s]   122 |       opened = openCapture(cap);
+[1.231s]       |                            ^~~
+[1.231s]       |                            |
+[1.231s]       |                            cv::VideoCapture
+[1.231s] In file included from /home/han/target/src/fc01_vision/src/camera_source.cpp:1:
+[1.231s] /home/han/target/src/fc01_vision/include/fc01_vision/camera_source.hpp:45:38: note:   initializing argument 1 of ‘bool fc01_vision::CameraSource::openCapture(int&)’
+[1.231s]    45 |   bool openCapture(cv::VideoCapture& cap);
+[1.231s]       |                    ~~~~~~~~~~~~~~~~~~^~~
+[1.314s] gmake[2]: *** [CMakeFiles/vision_core.dir/build.make:76：CMakeFiles/vision_core.dir/src/camera_source.cpp.o] 错误 1
+[1.314s] gmake[1]: *** [CMakeFiles/Makefile2:141：CMakeFiles/vision_core.dir/all] 错误 2
+[1.314s] gmake: *** [Makefile:146：all] 错误 2
+[1.316s] Invoked command in '/home/han/target/build/fc01_vision' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/fc01_vision -- -j12 -l12

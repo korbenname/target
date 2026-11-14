@@ -1,0 +1,6 @@
+CMake Warning at CMakeLists.txt:102 (message):
+  jikl_fc01_system not found: building vision_core, vision_demo and
+  vision_core_selftest only.  Install/provide VisionState.msg and rebuild to
+  get fc01_vision_node.
+
+

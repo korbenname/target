@@ -1,0 +1,41 @@
+Start testing: Nov 07 18:07 CST
+----------------------------------------------------------
+1/1 Testing: vision_core_selftest
+1/1 Test: vision_core_selftest
+Command: "/home/han/target/build/fc01_vision/vision_core_selftest"
+Directory: /home/han/target/build/fc01_vision
+"vision_core_selftest" start time: Nov 07 18:07 CST
+Output:
+----------------------------------------------------------
+[ ok ] red rectangle is detected
+[ ok ] rectangle centre x (actual=400.0000 expected=400.0000 tol=3.0000)
+[ ok ] rectangle centre y (actual=300.0000 expected=300.0000 tol=3.0000)
+[ ok ] rectangle width (actual=83.0000 expected=80.0000 tol=6.0000)
+[ ok ] rectangle height (actual=63.0000 expected=60.0000 tol=6.0000)
+[ ok ] PnP estimate is valid
+[ ok ] PnP range (actual=1.4746 expected=1.5000 tol=0.0800)
+[ ok ] PnP FRD x (forward) (actual=1.4545 expected=1.5000 tol=0.0800)
+[ ok ] PnP FRD y (right) (actual=0.1942 expected=0.2000 tol=0.0500)
+[ ok ] PnP FRD z (down) (actual=0.1454 expected=0.1500 tol=0.0500)
+[ ok ] blue circle is detected
+[ ok ] circle range estimate is valid
+[ ok ] circle range (actual=0.9801 expected=1.0000 tol=0.1000)
+[ ok ] circle FRD y (actual=0.0000 expected=0.0000 tol=0.0500)
+[ ok ] circle FRD z (actual=0.0000 expected=0.0000 tol=0.0500)
+[ ok ] bearing-only is not a valid position
+[ ok ] bearing points to the right
+[ ok ] first detection produces a valid position
+[ ok ] short dropout stays valid (coasting)
+[ ok ] long dropout becomes invalid
+[ ok ] long dropout is not detected
+
+All vision_core self tests passed.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"vision_core_selftest" end time: Nov 07 18:07 CST
+"vision_core_selftest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Nov 07 18:07 CST

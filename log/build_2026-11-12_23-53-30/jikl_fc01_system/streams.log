@@ -1,0 +1,210 @@
+[0.009s] Invoking command in '/home/han/target/build/jikl_fc01_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/han/target/src/jikl_fc01_system -DCMAKE_INSTALL_PREFIX=/home/han/target/install/jikl_fc01_system
+[0.019s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.101s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.105s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.106s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.108s] -- Found rosidl_adapter: 3.1.9 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.126s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.144s] -- Found builtin_interfaces: 1.2.3 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.332s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[0.468s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.648s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.665s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[0.682s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[0.682s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[0.682s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[0.745s] -- Configuring done
+[0.766s] -- Generating done
+[0.774s] -- Build files have been written to: /home/han/target/build/jikl_fc01_system
+[0.777s] Invoked command in '/home/han/target/build/jikl_fc01_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/han/target/src/jikl_fc01_system -DCMAKE_INSTALL_PREFIX=/home/han/target/install/jikl_fc01_system
+[0.779s] Invoking command in '/home/han/target/build/jikl_fc01_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/jikl_fc01_system -- -j16 -l16
+[0.816s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_generator_c[0m
+[0.823s] [  1%] Built target jikl_fc01_system__rs
+[0.824s] [  3%] Built target jikl_fc01_system__cpp
+[0.830s] [ 14%] Built target jikl_fc01_system__rosidl_generator_c
+[0.838s] [ 14%] Built target ament_cmake_python_symlink_jikl_fc01_system
+[0.839s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_introspection_cpp[0m
+[0.839s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_cpp[0m
+[0.843s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_fastrtps_cpp[0m
+[0.853s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_introspection_c[0m
+[0.854s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_fastrtps_c[0m
+[0.855s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_c[0m
+[0.871s] [ 25%] Built target jikl_fc01_system__rosidl_typesupport_cpp
+[0.871s] [ 35%] Built target jikl_fc01_system__rosidl_typesupport_introspection_cpp
+[0.879s] [ 46%] Built target jikl_fc01_system__rosidl_typesupport_c
+[0.881s] [ 57%] Built target jikl_fc01_system__rosidl_typesupport_fastrtps_cpp
+[0.882s] [ 67%] Built target jikl_fc01_system__rosidl_typesupport_fastrtps_c
+[0.882s] [ 78%] Built target jikl_fc01_system__rosidl_typesupport_introspection_c
+[0.900s] [ 78%] Built target jikl_fc01_system
+[0.916s] [ 80%] Built target jikl_fc01_system__py
+[0.923s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_generator_py[0m
+[0.933s] [ 89%] Built target jikl_fc01_system__rosidl_generator_py
+[0.940s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_introspection_c__pyext[0m
+[0.941s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_c__pyext[0m
+[0.943s] [35m[1mConsolidate compiler generated dependencies of target jikl_fc01_system__rosidl_typesupport_fastrtps_c__pyext[0m
+[0.949s] [ 92%] Built target jikl_fc01_system__rosidl_typesupport_introspection_c__pyext
+[0.950s] [ 96%] Built target jikl_fc01_system__rosidl_typesupport_c__pyext
+[0.954s] [100%] Built target jikl_fc01_system__rosidl_typesupport_fastrtps_c__pyext
+[1.046s] running egg_info
+[1.047s] writing jikl_fc01_system.egg-info/PKG-INFO
+[1.047s] writing dependency_links to jikl_fc01_system.egg-info/dependency_links.txt
+[1.047s] writing top-level names to jikl_fc01_system.egg-info/top_level.txt
+[1.048s] reading manifest file 'jikl_fc01_system.egg-info/SOURCES.txt'
+[1.049s] writing manifest file 'jikl_fc01_system.egg-info/SOURCES.txt'
+[1.066s] [100%] Built target ament_cmake_python_build_jikl_fc01_system_egg
+[1.080s] Invoked command in '/home/han/target/build/jikl_fc01_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/jikl_fc01_system -- -j16 -l16
+[1.089s] Invoking command in '/home/han/target/build/jikl_fc01_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/han/target/build/jikl_fc01_system
+[1.095s] -- Install configuration: ""
+[1.096s] -- Execute custom install script
+[1.096s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/ament_index/resource_index/rosidl_interfaces/jikl_fc01_system
+[1.096s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__functions.h
+[1.096s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__struct.h
+[1.096s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__type_support.h
+[1.096s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__functions.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__struct.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__type_support.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__functions.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__struct.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__type_support.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__functions.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__struct.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__type_support.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/navigation_command.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/rosidl_generator_c__visibility_control.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/velocity_command.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/vision_health.h
+[1.097s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/vision_state.h
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/library_path.sh
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/library_path.dsv
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__rosidl_typesupport_fastrtps_c.h
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__rosidl_typesupport_fastrtps_c.h
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__rosidl_typesupport_fastrtps_c.h
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__rosidl_typesupport_fastrtps_c.h
+[1.098s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__rosidl_typesupport_introspection_c.h
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__rosidl_typesupport_introspection_c.h
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__rosidl_typesupport_introspection_c.h
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__rosidl_typesupport_introspection_c.h
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__builder.hpp
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__struct.hpp
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__traits.hpp
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__type_support.hpp
+[1.099s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__builder.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__struct.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__traits.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__type_support.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__builder.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__struct.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__traits.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__type_support.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__builder.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__struct.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__traits.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__type_support.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/navigation_command.hpp
+[1.100s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/rosidl_generator_cpp__visibility_control.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/velocity_command.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/vision_health.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/vision_state.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__rosidl_typesupport_fastrtps_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__rosidl_typesupport_fastrtps_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__rosidl_typesupport_fastrtps_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__rosidl_typesupport_fastrtps_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/navigation_command__rosidl_typesupport_introspection_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/velocity_command__rosidl_typesupport_introspection_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_health__rosidl_typesupport_introspection_cpp.hpp
+[1.101s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/include/jikl_fc01_system/jikl_fc01_system/msg/detail/vision_state__rosidl_typesupport_introspection_cpp.hpp
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/pythonpath.sh
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/pythonpath.dsv
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system-0.1.0-py3.10.egg-info/PKG-INFO
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system-0.1.0-py3.10.egg-info/SOURCES.txt
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system-0.1.0-py3.10.egg-info/dependency_links.txt
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system-0.1.0-py3.10.egg-info/top_level.txt
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/__init__.py
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/_jikl_fc01_system_s.ep.rosidl_typesupport_c.c
+[1.102s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/_jikl_fc01_system_s.ep.rosidl_typesupport_fastrtps_c.c
+[1.103s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/_jikl_fc01_system_s.ep.rosidl_typesupport_introspection_c.c
+[1.103s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.103s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.103s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.103s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/libjikl_fc01_system__rosidl_generator_py.so
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/__init__.py
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_navigation_command.py
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_navigation_command_s.c
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_velocity_command.py
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_velocity_command_s.c
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_vision_health.py
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_vision_health_s.c
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_vision_state.py
+[1.104s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg/_vision_state_s.c
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/ament_index/resource_index/rust_packages/jikl_fc01_system
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/rust/Cargo.toml
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/rust/build.rs
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/rust/src/lib.rs
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/rust/src/msg.rs
+[1.105s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/rust/src/msg/rmw.rs
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/VisionState.idl
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/VisionHealth.idl
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/NavigationCommand.idl
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/VelocityCommand.idl
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/VisionState.msg
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/VisionHealth.msg
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/NavigationCommand.msg
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/msg/VelocityCommand.msg
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/ament_index/resource_index/package_run_dependencies/jikl_fc01_system
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/ament_index/resource_index/parent_prefix_path/jikl_fc01_system
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/ament_prefix_path.sh
+[1.106s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/ament_prefix_path.dsv
+[1.107s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/path.sh
+[1.107s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/environment/path.dsv
+[1.107s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/local_setup.bash
+[1.107s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/local_setup.sh
+[1.107s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/local_setup.zsh
+[1.107s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/local_setup.dsv
+[1.107s] -- Symlinking: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/package.dsv
+[1.111s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/ament_index/resource_index/packages/jikl_fc01_system
+[1.111s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/rosidl_cmake-extras.cmake
+[1.111s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/ament_cmake_export_dependencies-extras.cmake
+[1.111s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/ament_cmake_export_include_directories-extras.cmake
+[1.111s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/ament_cmake_export_libraries-extras.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/ament_cmake_export_targets-extras.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/rosidl_cmake_aggregate_target-extras.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_systemConfig.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_systemConfig-version.cmake
+[1.112s] -- Up-to-date symlink: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/package.xml
+[1.112s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_generator_c.so
+[1.112s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_typesupport_fastrtps_c.so
+[1.112s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_typesupport_introspection_c.so
+[1.113s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_typesupport_c.so
+[1.113s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_typesupport_fastrtps_cpp.so
+[1.113s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_typesupport_introspection_cpp.so
+[1.113s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_typesupport_cpp.so
+[1.141s] Listing '/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system'...
+[1.142s] Compiling '/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/__init__.py'...
+[1.142s] Listing '/home/han/target/install/jikl_fc01_system/local/lib/python3.10/dist-packages/jikl_fc01_system/msg'...
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/lib/libjikl_fc01_system__rosidl_generator_py.so
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_generator_cExport.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_generator_cExport-noconfig.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_typesupport_fastrtps_cExport.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_introspection_cExport.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_cExport.cmake
+[1.145s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_cExport-noconfig.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_generator_cppExport.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_typesupport_fastrtps_cppExport.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_introspection_cppExport.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_cppExport.cmake
+[1.146s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/jikl_fc01_system__rosidl_typesupport_cppExport-noconfig.cmake
+[1.147s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_generator_pyExport.cmake
+[1.147s] -- Up-to-date: /home/han/target/install/jikl_fc01_system/share/jikl_fc01_system/cmake/export_jikl_fc01_system__rosidl_generator_pyExport-noconfig.cmake
+[1.147s] Invoked command in '/home/han/target/build/jikl_fc01_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/han/target/build/jikl_fc01_system

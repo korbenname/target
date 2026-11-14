@@ -1,0 +1,2 @@
+Invoking command in '/home/han/target/build/fc01_vision': AMENT_PREFIX_PATH=/home/han/target/install/fc01_vision:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/fc01_vision /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process
+Invoked command in '/home/han/target/build/fc01_vision' returned '0': AMENT_PREFIX_PATH=/home/han/target/install/fc01_vision:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/han/target/install/fc01_vision /usr/bin/ctest -C Release -D ExperimentalTest --no-compress-output -V --force-new-ctest-process

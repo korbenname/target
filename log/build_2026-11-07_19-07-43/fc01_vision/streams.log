@@ -1,0 +1,45 @@
+[0.009s] Invoking command in '/home/han/target/build/fc01_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/han/target/install/fc01_vision_sim:/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/fc01_vision -- -j12 -l12
+[0.172s] Consolidate compiler generated dependencies of target vision_core
+[0.172s] [ 42%] Built target vision_core
+[0.172s] Consolidate compiler generated dependencies of target vision_ros_common
+[0.172s] Consolidate compiler generated dependencies of target vision_core_selftest
+[0.172s] Consolidate compiler generated dependencies of target vision_demo
+[0.172s] [ 57%] Built target vision_ros_common
+[0.172s] [ 85%] Built target vision_demo
+[0.172s] [ 85%] Built target vision_core_selftest
+[0.172s] Consolidate compiler generated dependencies of target vision_image_node
+[0.172s] [100%] Built target vision_image_node
+[0.173s] Invoked command in '/home/han/target/build/fc01_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/han/target/install/fc01_vision_sim:/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/fc01_vision -- -j12 -l12
+[0.181s] Invoking command in '/home/han/target/build/fc01_vision': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/han/target/install/fc01_vision_sim:/opt/ros/humble /usr/bin/cmake --install /home/han/target/build/fc01_vision
+[0.189s] -- Install configuration: "Release"
+[0.189s] -- Execute custom install script
+[0.190s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_image_node
+[0.190s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_demo
+[0.190s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/lib/fc01_vision/vision_core_selftest
+[0.190s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/camera_source.hpp
+[0.190s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/color_detector.hpp
+[0.190s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/debug_draw.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/param_utils.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/target_estimator.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/types.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/vision_node.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/vision_pipeline.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/include/fc01_vision/vision_state_adapter.hpp
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/config/vision.yaml
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/launch/vision.launch.py
+[0.191s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/ament_index/resource_index/package_run_dependencies/fc01_vision
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/ament_index/resource_index/parent_prefix_path/fc01_vision
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/ament_prefix_path.sh
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/ament_prefix_path.dsv
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/path.sh
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/environment/path.dsv
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.bash
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.sh
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.zsh
+[0.192s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/local_setup.dsv
+[0.192s] -- Symlinking: /home/han/target/install/fc01_vision/share/fc01_vision/package.dsv
+[0.199s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/ament_index/resource_index/packages/fc01_vision
+[0.200s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/cmake/fc01_visionConfig.cmake
+[0.200s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/cmake/fc01_visionConfig-version.cmake
+[0.200s] -- Up-to-date symlink: /home/han/target/install/fc01_vision/share/fc01_vision/package.xml
+[0.201s] Invoked command in '/home/han/target/build/fc01_vision' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/han/target/install/fc01_vision_sim:/opt/ros/humble /usr/bin/cmake --install /home/han/target/build/fc01_vision
