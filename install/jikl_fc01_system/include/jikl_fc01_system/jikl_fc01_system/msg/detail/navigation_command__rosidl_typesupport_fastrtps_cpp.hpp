@@ -1,1 +1,0 @@
-/home/han/target/build/jikl_fc01_system/rosidl_typesupport_fastrtps_cpp/jikl_fc01_system/msg/detail/navigation_command__rosidl_typesupport_fastrtps_cpp.hpp

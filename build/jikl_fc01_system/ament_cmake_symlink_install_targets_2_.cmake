@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/han/target/build/jikl_fc01_system/rosidl_generator_py/jikl_fc01_system/jikl_fc01_system_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" "TARGETS" "jikl_fc01_system__rosidl_typesupport_c__pyext" "DESTINATION" "local/lib/python3.10/dist-packages/jikl_fc01_system")

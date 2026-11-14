@@ -1,1 +1,0 @@
-/home/han/target/build/jikl_fc01_system/rosidl_typesupport_introspection_cpp/jikl_fc01_system/msg/detail/velocity_command__rosidl_typesupport_introspection_cpp.hpp

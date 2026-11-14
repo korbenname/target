@@ -1,4 +1,0 @@
-Invoking command in '/home/han/target/build/jikl_fc01_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/jikl_fc01_system -- -j12 -l12
-Invoked command in '/home/han/target/build/jikl_fc01_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/han/target/build/jikl_fc01_system -- -j12 -l12
-Invoking command in '/home/han/target/build/jikl_fc01_system': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/han/target/build/jikl_fc01_system
-Invoked command in '/home/han/target/build/jikl_fc01_system' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/han/target/build/jikl_fc01_system

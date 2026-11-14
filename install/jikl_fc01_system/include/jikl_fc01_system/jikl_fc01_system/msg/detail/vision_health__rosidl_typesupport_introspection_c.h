@@ -1,1 +1,0 @@
-/home/han/target/build/jikl_fc01_system/rosidl_typesupport_introspection_c/jikl_fc01_system/msg/detail/vision_health__rosidl_typesupport_introspection_c.h

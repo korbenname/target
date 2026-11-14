@@ -1,2 +1,0 @@
-/usr/bin/ar qc libvision_core.a CMakeFiles/vision_core.dir/src/camera_source.cpp.o CMakeFiles/vision_core.dir/src/color_detector.cpp.o CMakeFiles/vision_core.dir/src/target_estimator.cpp.o CMakeFiles/vision_core.dir/src/vision_pipeline.cpp.o CMakeFiles/vision_core.dir/src/debug_draw.cpp.o CMakeFiles/vision_core.dir/src/tuning_window.cpp.o
-/usr/bin/ranlib libvision_core.a

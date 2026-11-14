@@ -1,1 +1,0 @@
-ament_cmake_symlink_install_targets("TARGET_FILES" "/home/han/target/build/fc01_vision/vision_demo" "/home/han/target/build/fc01_vision/vision_core_selftest" "TARGETS" "vision_demo" "vision_core_selftest" "DESTINATION" "lib/fc01_vision")

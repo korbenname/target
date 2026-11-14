@@ -1,2 +1,0 @@
-vision_core_selftest 1 0.0228123
----
